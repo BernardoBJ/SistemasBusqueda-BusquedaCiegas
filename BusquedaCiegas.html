@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Busqueda Ciegas</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<script src="js/jQuery-2.1.4.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+
+<body>
+	<div class="row">
+		<div class="col-md-6 text-center text-primary">
+			<h4>Bernardo Alfonso Borunda Jaquez <small>314788</small></h4>
+		</div>
+		<div class="col-md-6 text-center text-primary">
+			<h4>Ingeniería en ciencias de la computación <small>Sistemas de Busqueda y Razonamiento</small></h4>
+		</div>
+	</div>
+	<hr>
+
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h3>Busqueda Ciegas</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-5">
+					<label>Estado Inicial</label>
+					<select class="form-control" name="EstadoInicial" id="EstadoInicial">
+						<option value="">Seleccione un estado</option>
+						<option value="A">Estado A</option>
+						<option value="B">Estado B</option>
+						<option value="C">Estado C</option>
+						<option value="D">Estado D</option>
+						<option value="E" selected>Estado E</option>
+						<option value="F">Estado F</option>
+						<option value="G">Estado G</option>
+						<option value="H">Estado H</option>
+					</select>
+				</div>
+				<div class="col-md-5">
+					<label>Estado Meta</label>
+					<select class="form-control" name="EstadoFinal" id="EstadoFinal">
+						<option value="">Seleccione un estado</option>
+						<option value="A">Estado A</option>
+						<option value="B">Estado B</option>
+						<option value="C">Estado C</option>
+						<option value="D">Estado D</option>
+						<option value="E">Estado E</option>
+						<option value="F">Estado F</option>
+						<option value="G">Estado G</option>
+						<option value="H" selected>Estado H</option>
+					</select>
+				</div>
+				<div class="col-md-1">
+					<br>
+					<button type="button" class="btn btn-primary" id="btnBuscar">
+						<i class="icon fa fa-search"></i> Buscar
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<img src="images/busquedaciegas.png">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h4>Camino de Busqueda</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<textarea id="Resultado" class="form-control" rows="18" readonly></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
